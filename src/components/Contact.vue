@@ -11,11 +11,11 @@
         </header>
           <div class="content-wrapper">
             <p>
-              Developed by:
+              Ninja'd by:
               <br/><br/>
-              <a href="http://ardani.github.io">Ardani Rohman / ardani.github.io</a>
+              <a href="http://vanilla-js.com">Mario Peusschers</a>
               <br/>
-              <a href="http://yessika21289.github.io">Yessika Naftali / yessika21289.github.io</a>
+              <a href="https://github.com/AstroPony/adyensquare">github.com *Slash!* AstroPony *Slash!* adyensquare</a>
             </p>
           </div>
       </section>

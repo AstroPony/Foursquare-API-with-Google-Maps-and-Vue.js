@@ -8,6 +8,7 @@
         </div>
         <div id="search-box">
           <input type="text" autofocus placeholder="What are you craving?" v-model="search">
+          <input type="text" autofocus placeholder="Travel distance (km)?" v-model="radius">
         </div>
         <a class="menu-trigger" href="javascript:void(0)">Menu<span></span></a>
       </header>
@@ -58,6 +59,9 @@
     watch: {
       search: _.debounce(function (val) {
         this.fetchData(val)
+      }, 500),
+      radius: _.debounce(function (val) {
+        this.fetchData(val)
       }, 500)
     },
     data () {
@@ -84,7 +88,8 @@
           lat: 0,
           lng: 0
         },
-        markers: []
+        markers: [],
+        radius: ''
       }
     },
     methods: {
@@ -144,8 +149,7 @@
         let position = this.defaultMarker.position
         let params = {
           ll: `${position.lat},${position.lng}`,
-          query: val,
-          radius: 3000
+          query: val
         }
         this.$Progress.start()
         this.markers = []

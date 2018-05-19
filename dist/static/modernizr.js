@@ -27,12 +27,7 @@ window.Modernizr = (function( window, document, undefined ) {
     var version = '2.7.1',
 
     Modernizr = {},
-
-    /*>>cssclasses*/
-    // option for enabling the HTML classes to be added
     enableClasses = true,
-    /*>>cssclasses*/
-
     docElement = document.documentElement,
 
     /**
@@ -482,17 +477,10 @@ window.Modernizr = (function( window, document, undefined ) {
       return !!window.postMessage;
     };
 
-
-    // Chrome incognito mode used to throw an exception when using openDatabase
-    // It doesn't anymore.
     tests['websqldatabase'] = function() {
       return !!window.openDatabase;
     };
 
-    // Vendors had inconsistent prefixing with the experimental Indexed DB:
-    // - Webkit's implementation is accessible through webkitIndexedDB
-    // - Firefox shipped moz_indexedDB before FF4b9, but since then has been mozIndexedDB
-    // For speed, we don't test the legacy (and beta-only) indexedDB
     tests['indexedDB'] = function() {
       return !!testPropsAll("indexedDB", window);
     };

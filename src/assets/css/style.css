@@ -113,7 +113,7 @@ Main components
   display: flex;
   left: 0;
   width: 100%;
-  height: 50px;
+  height: 100px;
   z-index: 2;
   background: rgba(58, 57, 63, 1);
   -webkit-transition: background 0.2s;
@@ -153,8 +153,9 @@ padding: 10px 15px;
 
 #search-box input {
   border: none;
-  width:100%;
-  padding: 10px 0;
+  width: 100%;
+  display: inline-block;
+  padding: 10px;
   font-size: 30px;
   background: none;
   line-height: 50px;
@@ -162,10 +163,14 @@ padding: 10px 15px;
   outline: none;
 }
 
+#search-box input:last-child {
+  border-left: 1px solid #222;
+}
+
 .menu-trigger {
   height: 50px;
   line-height: 50px;
-  width: 140px;
+  width: 90px;
   padding: 15px 0;
   text-transform: uppercase;
   font-weight: bold;
@@ -174,7 +179,8 @@ padding: 10px 15px;
 }
 
 .menu-trigger span {
-  /* hamburger icon */
+  top: -20px;
+  right: -5px;
   position: relative;
   display: inline-block;
   width: 18px;
@@ -246,7 +252,7 @@ padding: 10px 15px;
 }
 
 #main-nav li {
-  height: 20%;
+  height: 50px;
 }
 
 #main-nav li a {
@@ -398,14 +404,14 @@ padding: 10px 15px;
   width: 100px !important;
   height: 100px !important;
   float: left;
-  border: 2px ridge #DF1A22;
+  border: 2px ridge #29d03d;
 }
 
 .venue-title {
   font-size: 13pt;
   font-weight: bold;
   padding: 0 0 5px 5px;
-  border-bottom: 2px ridge #DF1A22;
+  border-bottom: 2px ridge #29d03d;
   max-width:270px;
   text-transform: capitalize;
 }
@@ -420,7 +426,7 @@ p.venue-description {
   float: right;
   font-weight: normal;
   font-size: 9pt;
-  background-color: #DF1A22;
+  background-color: #29d03d;
   width: 30px;
   height: 30px;
   text-align: center;
@@ -433,16 +439,12 @@ p.venue-description {
 .venue-open {
   margin: 10px 0 0 5px;
   font-size: 9pt;
-  color: #DF1A22;
+  color: #29d03d;
 }
 
 .venue-detail {
   float: right;
-  color: #DF1A22;
-}
-
-.logo-skyshi {
-  width: 80px;
+  color: #29d03d;
 }
 
 .content-wrapper {
@@ -527,7 +529,11 @@ blockquote em{
   font-style: italic;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
+  #search-box input {
+    width: 45%;
+    font-size: 25px;
+  }
   #intro h1 {
     font-size: 26px;
     font-size: 1.625rem;
@@ -536,9 +542,23 @@ blockquote em{
   .header {
     height: 80px;
   }
+
+  .menu-trigger {
+    width: 120px;
+  }
+
+  .menu-trigger span {
+    top: 0;
+    right: 0;
+  }
 }
 
 @media only screen and (max-width: 768px) {
+
+  #search-box input:last-child {
+    border-left: none;
+  }
+
   .menu-trigger {
     font-size: 16px;
     font-size: 1rem;
@@ -546,11 +566,11 @@ blockquote em{
   }
 
   #logo {
-    padding: 5px 15px;
+    padding: 15px 15px;
   }
 
   #logo img {
-    height: 40px;
+    height: 70px;
   }
 
   #search-box input {
@@ -559,7 +579,7 @@ blockquote em{
   }
 
   .content-wrapper {
-    padding-top: 70px;
+    padding-top: 120px;
     width: 90%;
   }
 

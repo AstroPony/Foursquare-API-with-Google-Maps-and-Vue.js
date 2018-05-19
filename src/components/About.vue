@@ -11,16 +11,11 @@
         </header>
         <div class="content-wrapper">
           <p>
-            <img src="/static/img/skyshi.png" class="logo-skyshi">
+            <img src="/static/img/0.jpg" class="logo-mario">
             <br/>
-            This is a simple project to learn about the collaboration of Vue, Google Maps, and Foursquare.
-            This project is developed by Skyshi.
-            Skyshi is a software development company in Yogyakarta, Indonesia.
-            We can help you to scale up your startup business by using latest technologies.
-            We can help your startup create your MVP (Minimum Viable Products),
-            Build your mobile apps, Extend your existing team, and Launch new features.
-            Skyshi established since 2009 with 30 and more talented workers. we can develop 5 startups every month.
-            We always learn something new and share it with others.
+            This is my first take a Vue.js project that integrates FourSquare's API and Google Maps with Places.
+            <br/>
+            Thank you to all the online developers who share their code and amazing experiences.
           </p>
           <blockquote>
             A person who never made a mistake never tried anything new<br/><br/>
