@@ -1,8 +1,8 @@
 {
-  "name": "vue-forsquare-gmaps",
+  "name": "adyen-challenge",
   "version": "1.0.0",
-  "description": "vue integrate with forsquare gmaps",
-  "author": "Ardani <master.ardani@gmail.com>",
+  "description": "FourSquare API with Vue.js and Google Maps with Places",
+  "author": "Mario Peusschers",
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",

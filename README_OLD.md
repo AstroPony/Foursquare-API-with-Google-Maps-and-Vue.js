@@ -1,2 +1,0 @@
-# adyensquare
-Adyen Developer Challange
