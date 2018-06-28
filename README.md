@@ -1,9 +1,5 @@
-# Adyen Challenge
+# Description
 > FourSquare API with Vue.js and Google Maps with Places
-
-## Demo
-
-[challenge.ratemylerao.co.za](https://challenge.ratemylerao.co.za)
 
 ## Build Setup
 ``` bash
